@@ -55,37 +55,46 @@ class _PostCardState extends State<PostCard> {
           SizedBox(
             height: 15,
           ),
-          Row(
-            children: [
-              Container(
-                //for likes
-                child: Row(
-                  children: [
-                    Text(" 5.3K"),
-                  ],
+          Padding(
+            padding: const EdgeInsets.only(left: 5, right: 5),
+            child: Row(
+              children: [
+                Container(
+                  //for likes
+                  child: Row(
+                    children: [
+                      Stack(
+                        children: [
+                          Icon(Icons.favorite, color: Colors.redAccent,),
+                          // Icon(Icons.thumb_up, color: Colors.blueAccent,),
+                        ],
+                      ),
+                      Text(" 5.3K"),
+                    ],
+                  ),
                 ),
-              ),
-              Container(
-                //For comments and shares
-                child: Row(
-                  children: [
-                    Text("525 "),
-                    Text("Comments "),
-                    Icon(
-                      Icons.circle,
-                      size: 5,
-                    ),
-                    Text(" 187 "),
-                    Text("Shares "),
-                  ],
+                Container(
+                  //For comments and shares
+                  child: Row(
+                    children: [
+                      Text("525 "),
+                      Text("Comments "),
+                      Icon(
+                        Icons.circle,
+                        size: 5,
+                      ),
+                      Text(" 187 "),
+                      Text("Shares "),
+                    ],
+                  ),
                 ),
-              ),
 
-            ],
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              ],
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
           Divider(),
           Row(

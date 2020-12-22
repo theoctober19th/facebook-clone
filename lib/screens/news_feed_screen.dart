@@ -9,6 +9,8 @@ class NewsFeedScreen extends StatelessWidget {
         child: ListView(
           children: [
             PostCard(),
+            PostCard(),
+            PostCard()
             // PostCard(),
             // PostCard(),
             // PostCard()
